@@ -1,0 +1,1 @@
+Linux相关，大部分内容使用的发行版为ArchLinux

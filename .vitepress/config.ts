@@ -1,0 +1,89 @@
+// https://vitepress.dev/reference/site-config
+import { defineConfig } from 'vitepress'
+// https://vitepress-sidebar.cdget.com/zhHans/guide/getting-started
+import { generateSidebar } from 'vitepress-sidebar'
+
+const commonSidebarConfig = {
+  documentRootPath: '/docs',
+  collapsed: true,
+  collapseDepth: 2,
+  sortFolderTo: "bottom",
+  // 	useTitleFromFileHeading: true,
+  // 	useTitleFromFrontmatter: true,
+  // 	useFolderTitleFromIndexFile: true,
+  // 	sortMenusByFrontmatterOrder: true
+}
+
+export default defineConfig({
+  srcDir: './docs',
+  srcExclude: ['**/README.md'],
+  outDir: './public',
+  title: 'Maker Note',
+  description: "Maker is making",
+  lang: 'zh-CN',
+  // head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  lastUpdated: true,
+  cleanUrls: true,
+  markdown: {
+    lineNumbers: true,
+    image: {
+      lazyLoading: true
+    }
+  },
+  themeConfig: {
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/Yb1t' }
+    ],
+    search: {
+      provider: 'local'
+    },
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2026 Maker'
+    },
+    langMenuLabel: '切换语言',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '浅色模式',
+    darkModeSwitchTitle: '深色模式',
+    sidebarMenuLabel: '菜单',
+    outline: { level: [2, 3], label: '目录' },
+    returnToTopLabel: '返回顶部',
+    // editLink: { pattern: 'https://github.com/username/repository-name/blame/main/docs/:path', text: '源代码', },
+    lastUpdated: { text: '更新于' },
+    docFooter: { prev: '上一篇', next: '下一篇' },
+    nav: [
+      { text: 'Android', link: '/Android' },
+      { text: 'Linux', link: '/Linux' },
+      { text: 'NAS', link: '/NAS' },
+      { text: 'OpenWRT', link: '/OpenWRT' },
+      { text: 'Misc', link: '/Misc' }
+    ],
+    sidebar: generateSidebar([
+      {
+        ...commonSidebarConfig,
+        scanStartPath: 'Android',
+        resolvePath: '/Android/'
+      },
+      {
+        ...commonSidebarConfig,
+        scanStartPath: 'Linux',
+        resolvePath: '/Linux/'
+      },
+      {
+        ...commonSidebarConfig,
+        scanStartPath: 'NAS',
+        resolvePath: '/NAS/'
+      },
+      {
+        ...commonSidebarConfig,
+        scanStartPath: 'OpenWRT',
+        resolvePath: '/OpenWRT/'
+      },
+      {
+        ...commonSidebarConfig,
+        scanStartPath: 'Misc',
+        resolvePath: '/Misc/'
+      }
+    ])
+  }
+})

@@ -1,0 +1,33 @@
+# 部署HomeAssistant
+
+## docker compose
+
+在你需要部署HomeAssistant的目录下新建文件 `compose.yaml` 
+
+```yaml
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: "ghcr.io/home-assistant/home-assistant:stable"
+    volumes:
+      - ./config:/config
+      - /etc/localtime:/etc/localtime:ro
+      - /run/dbus:/run/dbus:ro
+    restart: unless-stopped
+    privileged: true
+    network_mode: host
+    environment:
+      TZ: Asia/Shanghai
+```
+
+启动容器
+
+```bash
+docker compose up -d
+```
+
+## 参考
+
+[安装docker](../Docker/安装Docker.md)
+
+https://www.home-assistant.io/installation/linux/
