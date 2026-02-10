@@ -1,10 +1,10 @@
 // https://vitepress.dev/reference/site-config
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 // https://vitepress-sidebar.cdget.com/zhHans/guide/getting-started
-import { generateSidebar } from 'vitepress-sidebar'
+import { generateSidebar } from "vitepress-sidebar";
 
 const commonSidebarConfig = {
-  documentRootPath: '/docs',
+  documentRootPath: "/docs",
   collapsed: true,
   collapseDepth: 2,
   sortFolderTo: "bottom",
@@ -12,78 +12,79 @@ const commonSidebarConfig = {
   // 	useTitleFromFrontmatter: true,
   // 	useFolderTitleFromIndexFile: true,
   // 	sortMenusByFrontmatterOrder: true
-}
+};
 
 export default defineConfig({
-  srcDir: './docs',
-  srcExclude: ['**/README.md'],
-  outDir: './public',
-  title: 'Maker Note',
+  srcDir: "./docs",
+  srcExclude: ["**/README.md"],
+  outDir: "./public",
+  title: "Maker Note",
   description: "Maker is making",
-  lang: 'zh-CN',
+  lang: "zh-CN",
   // head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   lastUpdated: true,
   cleanUrls: true,
   markdown: {
     lineNumbers: true,
     image: {
-      lazyLoading: true
-    }
+      lazyLoading: true,
+    },
   },
   themeConfig: {
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/Yb1t' }
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/wraphex" }],
     search: {
-      provider: 'local'
+      provider: "local",
     },
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2026 Maker'
+      copyright:
+        'Copyright © 2021-2026 <a href="https://github.com/wraphex">wraphex</a>',
     },
-    langMenuLabel: '切换语言',
-    darkModeSwitchLabel: '主题',
-    lightModeSwitchTitle: '浅色模式',
-    darkModeSwitchTitle: '深色模式',
-    sidebarMenuLabel: '菜单',
-    outline: { level: [2, 3], label: '目录' },
-    returnToTopLabel: '返回顶部',
-    // editLink: { pattern: 'https://github.com/username/repository-name/blame/main/docs/:path', text: '源代码', },
-    lastUpdated: { text: '更新于' },
-    docFooter: { prev: '上一篇', next: '下一篇' },
+    langMenuLabel: "切换语言",
+    darkModeSwitchLabel: "主题",
+    lightModeSwitchTitle: "浅色模式",
+    darkModeSwitchTitle: "深色模式",
+    sidebarMenuLabel: "专栏列表",
+    outline: { level: [2, 3], label: "目录" },
+    returnToTopLabel: "返回顶部",
+    editLink: {
+      pattern: "https://github.com/wraphex/docs/edit/main/docs/:path",
+      text: "编辑此页",
+    },
+    lastUpdated: { text: "更新于" },
+    docFooter: { prev: "上一篇", next: "下一篇" },
     nav: [
-      { text: 'Android', link: '/Android' },
-      { text: 'Linux', link: '/Linux' },
-      { text: 'NAS', link: '/NAS' },
-      { text: 'OpenWRT', link: '/OpenWRT' },
-      { text: 'Misc', link: '/Misc' }
+      { text: "Android", link: "/Android" },
+      { text: "Linux", link: "/Linux" },
+      { text: "NAS", link: "/NAS" },
+      { text: "OpenWRT", link: "/OpenWRT" },
+      { text: "Misc", link: "/Misc" },
     ],
     sidebar: generateSidebar([
       {
         ...commonSidebarConfig,
-        scanStartPath: 'Android',
-        resolvePath: '/Android/'
+        scanStartPath: "Android",
+        resolvePath: "/Android/",
       },
       {
         ...commonSidebarConfig,
-        scanStartPath: 'Linux',
-        resolvePath: '/Linux/'
+        scanStartPath: "Linux",
+        resolvePath: "/Linux/",
       },
       {
         ...commonSidebarConfig,
-        scanStartPath: 'NAS',
-        resolvePath: '/NAS/'
+        scanStartPath: "NAS",
+        resolvePath: "/NAS/",
       },
       {
         ...commonSidebarConfig,
-        scanStartPath: 'OpenWRT',
-        resolvePath: '/OpenWRT/'
+        scanStartPath: "OpenWRT",
+        resolvePath: "/OpenWRT/",
       },
       {
         ...commonSidebarConfig,
-        scanStartPath: 'Misc',
-        resolvePath: '/Misc/'
-      }
-    ])
-  }
-})
+        scanStartPath: "Misc",
+        resolvePath: "/Misc/",
+      },
+    ]),
+  },
+});
