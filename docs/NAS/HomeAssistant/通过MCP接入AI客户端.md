@@ -58,7 +58,10 @@ MCP服务器：选择手动，并启用刚刚添加的配置
 
 ## 参考
 
-> https://modelcontextprotocol.io/docs/getting-started/intro
-> https://www.home-assistant.io/integrations/mcp_server
-> https://modelcontextprotocol.io/clients
-> https://docs.cherry-ai.com/advanced-basic/mcp/config
+https://modelcontextprotocol.io/docs/getting-started/intro
+
+https://www.home-assistant.io/integrations/mcp_server
+
+https://modelcontextprotocol.io/clients
+
+https://docs.cherry-ai.com/advanced-basic/mcp/config
