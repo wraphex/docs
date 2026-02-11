@@ -8,8 +8,8 @@ hero:
       text: 🛠️ Android
       link: /Android
     - theme: alt
-      text: 🐧 Linux
-      link: /Linux
+      text: 🐧 ArchLinux
+      link: /ArchLinux
     - theme: alt
       text: 🗃️ NAS
       link: /NAS
@@ -17,4 +17,3 @@ hero:
       text: 🌐 OpenWRT
       link: /OpenWRT
 ---
-

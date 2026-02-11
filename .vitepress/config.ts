@@ -67,8 +67,8 @@ export default defineConfig({
       },
       {
         ...commonSidebarConfig,
-        scanStartPath: "Linux",
-        resolvePath: "/Linux/",
+        scanStartPath: "ArchLinux",
+        resolvePath: "/ArchLinux/",
       },
       {
         ...commonSidebarConfig,
