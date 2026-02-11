@@ -1,4 +1,4 @@
-# PipeWire 交换左右声道
+# ArchLinux - PipeWire交换左右声道
 
 ## pactl设置
 

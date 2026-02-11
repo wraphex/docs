@@ -1,4 +1,4 @@
-# DLNA 音频推流（uPnP Renderer）
+# ArchLinux - DLNA 音频推流（uPnP Renderer）
 
 ## 实现方案
 
@@ -10,7 +10,7 @@ MPD+Upmpdcli+PipeWire
 paru -S mpd upmpdcli
 ```
 
-PipeWire配置参考[声音](/Linux/声音.md)
+PipeWire配置参考[声音配置](声音配置.md)
 
 /etc/mpd.conf
 
@@ -39,7 +39,7 @@ systemctl --user enable --now mpd
 systemctl --user enable --now upmpdcli
 ```
 
-[用户级服务开机自启动解决方案](/Linux/用户级服务开机自启动解决方案.md)
+[用户级服务开机自启动解决方案](用户级服务开机自启动解决方案.md)
 
 ## 问题
 
