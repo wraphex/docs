@@ -12,7 +12,7 @@
 
 1. 右上角 `设置` - `MCP服务器` - `添加` - `快速创建`
 
-![[_assets/HomeAssistant通过MCP接入AI客户端/file-20260205180923903.png]]
+![](_assets/通过MCP接入AI客户端/file-20260205180923903.png)
 
 2. 填写配置
 
@@ -24,11 +24,11 @@ URL：`{HA地址}/api/mcp`
 
 请求头： `Authorization=Bearer {HA令牌}`
 
-![[_assets/HomeAssistant通过MCP接入AI客户端/file-20260205181320672.png]]
+![](_assets/通过MCP接入AI客户端/file-20260205181320672.png)
 
 填写后点右上角保存，启用。启用成功后就会获取到HA MCP Server提供的工具了
 
-![[_assets/HomeAssistant通过MCP接入AI客户端/file-20260205184804989.png]]
+![](_assets/通过MCP接入AI客户端/file-20260205184804989.png)
 
 3. 添加助手
 
@@ -36,25 +36,25 @@ URL：`{HA地址}/api/mcp`
 
 模型设置：选择支持工具调用的模型
 
-![[_assets/HomeAssistant通过MCP接入AI客户端/file-20260205183031564.png]]
+![](_assets/通过MCP接入AI客户端/file-20260205183031564.png)
 
 提示词设置：提示词可以自己写，比如这里的 `你是一个智能家居助手，可以控制灯光、空调等智能设备，也可以获取温湿度等传感器数据。优先使用提供的工具获取实时数据。`
 
-![[_assets/HomeAssistant通过MCP接入AI客户端/file-20260205182411551.png]]
+![](_assets/通过MCP接入AI客户端/file-20260205182411551.png)
 
 MCP服务器：选择手动，并启用刚刚添加的配置
 
-![[_assets/HomeAssistant通过MCP接入AI客户端/file-20260205183414405.png]]
+![](_assets/通过MCP接入AI客户端/file-20260205183414405.png)
 
 4. Enjoy!
 
 获取设备状态
 
-![[_assets/HomeAssistant通过MCP接入AI客户端/file-20260205184111696.png]]
+![](_assets/通过MCP接入AI客户端/file-20260205184111696.png)
 
 控制设备
 
-![[_assets/HomeAssistant通过MCP接入AI客户端/file-20260205184134011.png]]
+![](_assets/通过MCP接入AI客户端/file-20260205184134011.png)
 
 ## 参考
 
