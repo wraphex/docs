@@ -54,7 +54,7 @@ export default defineConfig({
     docFooter: { prev: "上一篇", next: "下一篇" },
     nav: [
       { text: "Android", link: "/Android" },
-      { text: "Linux", link: "/Linux" },
+      { text: "ArchLinux", link: "/ArchLinux" },
       { text: "NAS", link: "/NAS" },
       { text: "OpenWRT", link: "/OpenWRT" },
       { text: "Misc", link: "/Misc" },
