@@ -1,4 +1,4 @@
-# 配置DDNS-GO自动更新dynv6的ipv6记录
+# OpenWRT - 配置DDNS-GO自动更新dynv6的ipv6记录
 
 ## 安装DDNS-GO
 
@@ -11,17 +11,11 @@ opkg install ddns-go luci-app-ddns-go luci-i18n-ddns-go-zh-cn
 
 ## 获取设备ipv6地址
 
-本机（路由器）
-
-本机的地址可以直接通过网卡获取
+本机（路由器）的地址可以直接通过网卡获取
 
 ![通过网卡获取](_assets/配置DDNS-GO自动更新dynv6的ipv6记录/image.png)
 
-通过网卡获取
-
-其他设备（连接路由器的设备）
-
-其他设备可以通过命令获取，这里使用[路由表获取](https://github.com/jeessy2/ddns-go/wiki/通过命令获取IP参考#获取局域网中的其它设备ipv6地址)
+其他设备（连接路由器的设备）可以通过命令获取，这里使用[路由表获取](https://github.com/jeessy2/ddns-go/wiki/通过命令获取IP参考#获取局域网中的其它设备ipv6地址)
 
 ```bash
 ip -6 addr show br-lan | awk '{print $2}' | awk '/240:?/' | awk -F:: '{print $1 ":xxxx:xxx:xxxx:xxxx "}'
@@ -40,8 +34,6 @@ http://dynv6.com/api/update?hostname=#{domain}&token=你的token&ipv6=#{ip}
 ```
 
 ![token](_assets/配置DDNS-GO自动更新dynv6的ipv6记录/image%201.png)
-
-token
 
 ## webhook通知
 
