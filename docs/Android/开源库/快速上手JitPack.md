@@ -122,4 +122,5 @@ afterEvaluate {
 ## 参考
 
 https://docs.jitpack.io/android/
+
 https://github.com/wraphex/any-preference
