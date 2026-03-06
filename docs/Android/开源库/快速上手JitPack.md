@@ -66,13 +66,13 @@ jitpack依赖maven-publish插件进行发布，需要先配置maven。以下代�
 
 打开[JitPack官网](https://jitpack.io/)，输入`用户名/仓库名`，点击`Look up`，下方就会列出对应仓库的版本信息
 
-![](file-20260306182151576.png)
+![](_assets/快速上手JitPack/file-20260306182151576.png)
 
 选择你要编译的版本，点`Get it`触发编译
 
 编译完成后，下方会列出这个包的引用方式
 
-![](file-20260306182930851.png)
+![](_assets/快速上手JitPack/file-20260306182930851.png)
 
 至此，发布完成。详细配置可以参考 https://github.com/wraphex/any-preference
 
