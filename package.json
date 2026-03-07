@@ -5,7 +5,7 @@
   },
   "scripts": {
     "dev": "vitepress dev",
-    "build": "git fetch --unshallow && vitepress build",
+    "build": "vitepress build",
     "preview": "vitepress preview"
   }
 }

@@ -22,7 +22,7 @@ export default defineConfig({
   description: "Maker is making",
   lang: "zh-CN",
   // head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
-  lastUpdated: true,
+  lastUpdated: false,
   cleanUrls: true,
   markdown: {
     lineNumbers: true,
