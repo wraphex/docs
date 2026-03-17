@@ -121,6 +121,12 @@ adb shell wm size 1600x2560
 adb shell wm density 256
 ```
 
+## 抓取当前屏幕布局
+
+```bash
+adb shell uiautomator dump /sdcard/window_dump.xml
+```
+
 ## 刷新依赖
 
 ```Bash
