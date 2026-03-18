@@ -21,7 +21,9 @@ export default defineConfig({
   title: "Maker Note",
   description: "Maker is making",
   lang: "zh-CN",
-  // head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [
+    ["link", { rel: "icon", href: "https://github.com/wraphex.png?size=32" }],
+  ],
   lastUpdated: false,
   cleanUrls: true,
   markdown: {
